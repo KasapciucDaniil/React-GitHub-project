@@ -9,7 +9,7 @@ export const Footer = () => {
           <h1 className="text-logo display-4">React js</h1>
             <img 
                 src="../images/logo.png" 
-                width="80"
+                width="78"
                 height="120"
                 className="d-inline-block align-top footer"
                 alt=""
