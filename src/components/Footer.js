@@ -1,18 +1,17 @@
 import React from 'react'
 import { Navbar, NavbarBrand } from 'react-bootstrap';
+import logo from '../logo.svg'
 
 export const Footer = () => {
     return(
         <Navbar bg="dark" variant="dark"> 
           <NavbarBrand>
           <div className="footerLogo">
-          <h1 className="text-logo display-4">React js</h1>
+          <h1 className="text-logo display-4"><strong>React js</strong></h1>
             <img 
-                src="../images/logo.png" 
-                width="78"
-                height="120"
-                className="d-inline-block align-top footer"
-                alt=""
+                src={logo}
+                className="d-inline-block align-top footer App-logo"
+                alt="logo"
             />   
           </div>    
           </NavbarBrand>

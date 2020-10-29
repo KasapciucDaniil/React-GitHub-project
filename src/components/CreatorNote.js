@@ -36,18 +36,7 @@ export const CreatorNote = ({notes, onRemove, onSave}) => {
           setType(note.type)
        }
      }
-
-  // const saveNotes = (event, note) => {
-  //   event.preventDefault()
-
-  //    onSave(note.id).then(() => {
-  //      alert.show('Заметка была добавлена в избранное!', 'success')
-  //    }).catch(() => {
-  //      alert.show('Заметку нельзя добавить в избранное!', 'danger')
-  //    })
-  //   }
-  
-  
+   
   return (
     <TransitionGroup component="ul" className="list-group fav-notes">
       <h1 className="txt display-4">Заметки и посты</h1>
@@ -79,6 +68,7 @@ export const CreatorNote = ({notes, onRemove, onSave}) => {
            type="button" 
            className="btn btn-outline-danger btn-sm btn-delete "
            onClick={event => submitHandler(event, note)}
+           style={{marginBottom: '4rem'}}
          >
            &times;
          </button>

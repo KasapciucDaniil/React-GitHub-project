@@ -44,6 +44,7 @@ export const CreatorFavorite = ({favnotes, onRemove}) => {
             <strong className="text display-4">{favnote.text}</strong>
              
               <button 
+                style={{marginBottom: '3rem'}}
                 type="button" 
                 className="btn btn-outline-danger btn-sm btn-delete "
                 onClick={event => submitHandler(event, favnote)}

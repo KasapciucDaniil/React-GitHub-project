@@ -1,15 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import logo from '../logo.svg'
 import {Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap'
 
 export const Header = () => (
   <Navbar bg="dark" variant="dark">
      <Navbar.Brand href="/">
          <img 
-           src="../images/logo.png"
+           src={logo}
            height="70"
            weight="70"
-           className="d-inline-block align-top"
+           className="d-inline-block align-top App-logo"
            alt="Logo"
          />
        </Navbar.Brand>

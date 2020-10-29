@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import { Button } from 'react-bootstrap'
 import { AlertContext } from "../context/alert/alertContext";
 import { FirebaseContext } from '../context/firebase/firebaseContext';
-// import { Footer } from './Footer';
+import { Alert} from '../components/Alert'
 
 export const FormNote = () => {
   const [title, setTitle] = useState('')
@@ -31,8 +31,9 @@ export const FormNote = () => {
 
     return(
    <div className="formNote">
+     <h1 className="display-4 txt-form">Создание поста</h1>
+     <Alert />
     <Form className="creator">
-      <h1 className="display-4 txt-form">Создание поста</h1>
         <Form.Group>
           <Form.Label>Название Заметки</Form.Label>
           <Form.Control 
@@ -67,7 +68,6 @@ export const FormNote = () => {
         <Form.Group>
           <Button onClick={submitHandler} variant="success">Создать</Button>
         </Form.Group>
-        {/* <Footer /> */}
      </Form>
    </div>    
     )

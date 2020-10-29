@@ -5,7 +5,7 @@ export const About = () => {
     return(
    <div>
       <h1 className="display-4 txt-about">Информация о сайте</h1>
-        <div className="jumbotron jumbotron-fluid">
+        <div style={{borderRadius: '14px'}} className="jumbotron jumbotron-fluid">
           <div className="container">
           <h1 className="display-4">React ToDo</h1>
             <p className="lead">React ToDo позволяет создавать заметки и добавлять в отдел в "Избранное".React изначально был спроектирован так, чтобы его можно было внедрять постепенно. Другими словами, вы можете начать с малого и использовать только ту функциональность React, которая необходима вам в данный момент. Информация в этом разделе будет полезна в любой ситуации: при первом знакомстве с React, при создании простой динамической HTML-страницы и даже при проектировании сложного React-приложения.

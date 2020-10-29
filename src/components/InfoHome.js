@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
-import { Footer } from './Footer';
 
 export const InfoHome = () => {
     return(
@@ -10,6 +9,7 @@ export const InfoHome = () => {
          <div className="info-r">
             <img 
               className="reactInfo"
+              style={{borderRadius: '14px'}}
               height="300"
               weight="270"
               src="../images/reactjs.jpg" 
@@ -26,6 +26,7 @@ export const InfoHome = () => {
             <img 
              className="reactInfoR"
              height="350"
+             style={{borderRadius: '14px'}}
              width="560"
              src="../images/reactjs3.jpg"
              alt=""
@@ -40,6 +41,7 @@ export const InfoHome = () => {
           <img 
               className="reactInfo"
               height="370"
+              style={{borderRadius: '14px'}}
               width="530"
               src="../images/reactjs1.jpg"
               alt=""
